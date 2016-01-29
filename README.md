@@ -15,24 +15,19 @@ The default confirm dialog message is 'A new version of this app is available.'
 If you wish to replace 'this app' with your app's name, add APP_NAME to your
 Meteor.settings.public and set it to your app's name.
 
-### example
-
-inside settings.json:
-
 ```
+// settings.json:
 {
   "public": {
     "APP_NAME": "YOUR_APP_NAME"
   }
 }
-```
 
-Be sure to run Meteor using your settings.json
-
-```
+// shell
 meteor --settings settings.json
 ```
 
-## mdg:reload-on-resume
+## Dependencies
 
-https://github.com/meteor/mobile-packages/blob/master/packages/mdg:reload-on-resume/README.md
+[mdg:reload-on-resume](https://github.com/meteor/mobile-packages/blob/master/packages/mdg:reload-on-resume/README.md)
+[cordova-plugin-dialogs](https://github.com/apache/cordova-plugin-dialogs)
