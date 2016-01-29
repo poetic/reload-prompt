@@ -29,5 +29,5 @@ meteor --settings settings.json
 
 ## Dependencies
 
-[mdg:reload-on-resume](https://github.com/meteor/mobile-packages/blob/master/packages/mdg:reload-on-resume/README.md)
-[cordova-plugin-dialogs](https://github.com/apache/cordova-plugin-dialogs)
+- [mdg:reload-on-resume](https://github.com/meteor/mobile-packages/blob/master/packages/mdg:reload-on-resume/README.md)
+- [cordova-plugin-dialogs](https://github.com/apache/cordova-plugin-dialogs)
