@@ -4,7 +4,9 @@ Reload-Prompt uses mdg's reload-on-resume package and adds a confirm dialog to p
 
 ##Installation
 
+```
 meteor add poetic:reload-prompt
+```
 
 ##Setup
 
@@ -17,6 +19,7 @@ Meteor.settings.public and set it to your app's name.
 
 inside settings.json:
 
+```
 {
   "public": {
     "APP_NAME": "Hello World App", // <- add your app name here
@@ -30,10 +33,13 @@ inside settings.json:
     }
   }
 }
+```
 
 Be sure to run Meteor using your settings.json
 
+```
 meteor --settings settings.json
+```
 
 ##mdg:reload-on-resume
 
