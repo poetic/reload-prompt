@@ -6,9 +6,14 @@ Package.describe({
   documentation: 'README.md'
 });
 
+Cordova.depends({
+  'cordova-plugin-dialogs': '1.1.1'
+});
+
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
   api.use('ecmascript');
+  api.use('mdg:reload-on-resume@1.0.4');
   api.addFiles('reload-prompt.js');
 });
 
