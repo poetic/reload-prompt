@@ -34,3 +34,7 @@ inside settings.json:
 Be sure to run Meteor using your settings.json
 
 meteor --settings settings.json
+
+##mdg:reload-on-resume
+
+https://github.com/meteor/mobile-packages/blob/master/packages/mdg:reload-on-resume/README.md
