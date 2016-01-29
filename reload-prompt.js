@@ -1,7 +1,12 @@
 Tracker.autorun(function(){
   if (Reload.isWaitingForResume()){
-    const message = 'A new version of your app is avaliable';
+    const appNameInSetting = Meteor.settings &&
+      Meteor.settings.public &&
+      Meteor.settings.public.APP_NAME
 
+    const appName = 'this app' || appNameInSetting;
+
+    const message = `A new version of ${appName} is avaliable`;
     if (Meteor.isCordova) {
       // for cordova
 
