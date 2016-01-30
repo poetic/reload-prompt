@@ -6,11 +6,11 @@ Tracker.autorun(function(){
 
     const appName = appNameInSetting || 'this app';
 
-    const message = `A new version of ${appName} is avaliable`;
+    const message = `A new version of ${appName} is avaliable.`;
     if (Meteor.isCordova) {
       // for cordova
 
-      const title = 'Update available';
+      const title = 'Update Available';
       const confirmCallback = function() {
         window.location.reload();
       };
