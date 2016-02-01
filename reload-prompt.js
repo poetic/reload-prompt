@@ -16,10 +16,10 @@ Tracker.autorun(function(){
       };
       const buttonLabels = ['Update', 'Later'];
 
-      if (process.env.NODE_ENV === "production") {
+      if (!Meteor.settings.public || !Meteor.settings.public.NO_RELOAD_PROMPT) {
         navigator.notification.confirm(message, confirmCallback, title, buttonLabels);
       }else{
-        console.log( "Reload Prompt - Accepting update since not production" );
+        console.log( "Reload Prompt - Accepting update automatically due to settings" );
         window.location.reload();
       }
     } else {

@@ -19,12 +19,26 @@ Meteor.settings.public and set it to your app's name.
 // settings.json:
 {
   "public": {
-    "APP_NAME": "YOUR_APP_NAME"
+    "APP_NAME": "YOUR_APP_NAME",
   }
 }
 
 // shell
 meteor --settings settings.json
+```
+
+### Development
+
+If you would like to disable the reload promtp (probably for development), you
+can do that via.
+
+```
+// settings.json:
+{
+  "public": {
+    "NO_RELOAD_PROMPT": "true",
+  }
+}
 ```
 
 ## Dependencies
