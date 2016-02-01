@@ -16,7 +16,12 @@ Tracker.autorun(function(){
       };
       const buttonLabels = ['Update', 'Later'];
 
-      navigator.notification.confirm(message, confirmCallback, title, buttonLabels);
+      if (process.env.NODE_ENV === "production") {
+        navigator.notification.confirm(message, confirmCallback, title, buttonLabels);
+      }else{
+        console.log( "Reload Prompt - Accepting update since not production" );
+        window.location.reload();
+      }
     } else {
       // browser
 
