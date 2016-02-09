@@ -1,6 +1,6 @@
 Package.describe({
   name: 'poetic:reload-prompt',
-  version: '0.0.7',
+  version: '0.0.8',
   summary: 'Handles hotcode reload, provides prompt.',
   git: 'https://github.com/poetic/reload-prompt',
   documentation: 'README.md'
@@ -12,6 +12,7 @@ Cordova.depends({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
+  api.use('meteor-base');
   api.use('ecmascript');
   api.use('tracker');
   api.use('mdg:reload-on-resume@1.0.4');

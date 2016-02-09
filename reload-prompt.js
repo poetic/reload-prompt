@@ -1,3 +1,5 @@
+
+
 Tracker.autorun(function(){
   if (Reload.isWaitingForResume()){
     const appNameInSetting = Meteor.settings &&
@@ -16,7 +18,7 @@ Tracker.autorun(function(){
       };
       const buttonLabels = ['Update', 'Later'];
 
-      if (!Meteor.settings.public || !Meteor.settings.public.NO_RELOAD_PROMPT) {
+      if (!Meteor.settings || !Meteor.settings.public || !Meteor.settings.public.NO_RELOAD_PROMPT) {
         navigator.notification.confirm(message, confirmCallback, title, buttonLabels);
       }else{
         console.log( "Reload Prompt - Accepting update automatically due to settings" );
