@@ -1,6 +1,6 @@
 Package.describe({
   name: 'poetic:reload-prompt',
-  version: '1.0.0',
+  version: '1.0.1',
   summary: 'Handles hotcode reload, provides prompt.',
   git: 'https://github.com/poetic/reload-prompt',
   documentation: 'README.md'
