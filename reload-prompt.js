@@ -23,7 +23,13 @@ Tracker.autorun(function(){
     if (Meteor.isCordova) {
       // for cordova
       const title = 'Update Available';
-      const confirmCallback = function() { window.location.reload(); };
+      const confirmCallback = function(buttonIndex) {
+        // NOTE: Callback to invoke with index of button pressed (1, 2 or 3)
+        // when the dialog is dismissed without a button press (0)
+        if (buttonIndex) {
+          window.location.reload();
+        }
+      };
       const buttonLabels = ['Update', 'Later'];
 
       navigator.notification.confirm(message, confirmCallback, title, buttonLabels);
