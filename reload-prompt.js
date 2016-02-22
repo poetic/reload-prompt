@@ -1,5 +1,3 @@
-
-
 Tracker.autorun(function(){
   if (Reload.isWaitingForResume()){
     // do not show prompt if the user set NO_RELOAD_PROMPT
