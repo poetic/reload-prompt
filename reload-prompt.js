@@ -26,7 +26,7 @@ Tracker.autorun(function(){
       const confirmCallback = function(buttonIndex) {
         // NOTE: Callback to invoke with index of button pressed (1, 2 or 3)
         // when the dialog is dismissed without a button press (0)
-        if (buttonIndex) {
+        if (buttonIndex === 1) {
           window.location.reload();
         }
       };
